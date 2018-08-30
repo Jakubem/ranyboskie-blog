@@ -32,16 +32,15 @@
   @import '../../css/_var.scss';
   .header {
     width: 100%;
-    height: 50px;
-    background: $c-yellow;
+    position: fixed;
+    top: 0;
+    height: 40px;
     padding: 3px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // box-shadow: $Shadow-base;
-    border-top-left-radius: $b-radius;
-    border-top-right-radius: $b-radius;
+    background: $c-white;
     border-bottom: $b-accent;
   }
   .header-ul {

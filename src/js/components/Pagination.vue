@@ -69,6 +69,7 @@
 
   .paginate-list {
     list-style: none;
+    height: 100%;
   }
 
   .paginate-links {
@@ -80,6 +81,7 @@
   .paginate-links li {
     margin: 5px;
     cursor: pointer;
+    padding: 0 0 5px 0;
   }
 
   .paginate-links .active {

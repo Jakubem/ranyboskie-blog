@@ -16,7 +16,7 @@
   const apiUrl = 'http://localhost:1337';
   const strapi = new Strapi(apiUrl);
   import Pagination from '../components/Pagination.vue'
-  import HeaderNav from '../components/Header.vue'
+  import HeaderNav from '../components/HeaderNav.vue'
   import Sidebar from '../components/Sidebar.vue'
   export default {
     components: {
@@ -39,5 +39,7 @@
 
   .body-wrapper {
     display: flex;
+    height: 100%;
+    margin: 50px 0 10px 0;
   }
 </style>

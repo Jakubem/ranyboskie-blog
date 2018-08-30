@@ -9,7 +9,7 @@
       </h2>
     </a>
     <div class="article-brief">
-      <p>
+      <p class="article-brief-p">
         {{ obj.Content_brief }}
       </p>
     </div>
@@ -41,6 +41,10 @@
   }
   .article-brief {
     width: 50%;
+  }
+  .article-brief-p {
+    font: $f-p-b;
+    word-break: break-all;
   }
   .article-card {
     border: 1px solid black;

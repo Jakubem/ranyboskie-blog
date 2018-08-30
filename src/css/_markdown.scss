@@ -117,8 +117,9 @@
   }
 
   .article-body blockquote {
-    border-left: 8px solid #fafafa;
-    padding: 1rem;
+    border-left: 10px solid $c-purple-dimmed;
+    padding: 0 0 0 1rem;
+    font-style: italic;
   }
   
   .article-body pre,
