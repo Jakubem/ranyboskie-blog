@@ -15,7 +15,7 @@
             :id="el" 
             :value="el" 
             v-model="picked">
-            <span>
+            <span class="filter-radio-content">
               {{ el }}
             </span>
         </label>
@@ -65,7 +65,7 @@
 
   .filter-legend {
     font: $f-h2;
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 5px;
     padding: 0;
   }
 
@@ -87,17 +87,18 @@
     display: flex;
     flex-direction: row;
   }
-  .filter-radio-label span {
+
+  .filter-radio-label .filter-radio-content {
     font: $f-h2;
     text-align: center;
-    background-color: $c-red;
-    padding: 10px;
+    background-color: $c-yellow;
+    padding: 5px 15px;
     margin: 5px;
     color: $c-black;
     border-radius: $b-radius;
   }
 
-  .filter-radio:checked + span {
+  .filter-radio:checked + .filter-radio-content {
     background-color: $c-green;
   }
 </style>
