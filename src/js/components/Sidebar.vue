@@ -23,7 +23,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // box-shadow: $Shadow-base;
     border-left: $b-hair;
   }
 </style>

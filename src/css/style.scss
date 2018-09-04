@@ -1,24 +1,18 @@
-@import 'reset';
+// @import 'reset';
 @import 'var';
 @import 'markdown';
 @import 'home';
 
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,500");
+// @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+@import url('https://fonts.googleapis.com/css?family=Istok+Web');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+// @import url('https://fonts.googleapis.com/css?family=Acme');
 
-
-html {
-  box-sizing: border-box;
-  height: 100%;
-}
-
-#app {
-  box-sizing: border-box;
-  height: 100%;
-}
-
-body {
+html, body, #app {
   margin: 0;
-  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .main-wrapper {
@@ -26,10 +20,55 @@ body {
   box-sizing: border-box;
   flex-direction: column;
   justify-content: space-between;
-  background: #fff;
+  align-items: center;
   height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
+
+// this is element for background textures
+// .main-wrapper::after {
+//   content : "";
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   background-image: url('../assets/gravel.png');
+//   width: 100%;
+//   height: 100%;
+//   opacity : 0.2;
+//   z-index: -1;
+// }
+
+.svg-icon {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  fill: $c-white;
+  -webkit-filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.46));
+  filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.46));
+  &:hover {
+    fill: $c-yellow-light;
+  }
+}
+
+.CTA {
+  font: $f-a;
+  background-color: $c-orange;
+  color: black;
+  text-align: center;
+  border-radius: $b-radius;
+  padding: 5px;
+  &:hover {
+    background-color: $c-orange-hover;
+  }
+  &:active {
+    background-color: $c-yellow;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .headline {

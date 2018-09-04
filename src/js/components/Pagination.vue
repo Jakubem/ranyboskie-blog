@@ -1,8 +1,11 @@
 <template>
-  <div class="card-wrapper">
+  <div class="pagination-wrapper">
+    <h3 class="pagination-title">
+      Ostatnie wpisy:
+    </h3>
     <paginate name="card" 
       :list="card" 
-      :per="3"
+      :per="4"
       class="paginate-list">
       <li 
         v-for="el in paginated('card')" 
@@ -45,6 +48,8 @@
               Headline
               Content_brief
               Body
+              KV_alt
+              createdAt
               URL
               KV {
                 url
@@ -53,23 +58,36 @@
           }`
         }
       })
-    this.card = data.data.articles;
+    this.card = (data.data.articles).slice(0, 12);
     },
   }
 </script>
 <style lang="scss">
   @import '../../css/_var.scss';
-  .card-wrapper {
+
+  .pagination-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
+    margin-top: 50px;
     height: 100%;
-    width: 100%;
+    // width: 100%;
+    flex: 1;
+  }
+
+  .pagination-title {
+    font: $f-title;
+    margin: 0 0 0 20px;
+    align-self: flex-start;
+    color: $c-black;
   }
 
   .paginate-list {
     list-style: none;
     height: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .paginate-links {

@@ -109,17 +109,57 @@
     font-size: .6em;
   }
   
-  /* https://github.com/mrmrs/fluidity */
+
+  // tables //
+  .article-body table {
+    margin: 0 auto;
+  }
+
+  .article-body th {
+    letter-spacing: 2px;
+    background-color: $c-orange;
+  }
+  
+  .article-body td {
+    letter-spacing: 1px;
+    padding: 5px;
+  }
+  
+  .article-body tbody td {
+    border-radius: 2px;
+    text-align: center;
+  }
+  
+  .article-body tfoot th {
+    text-align: right;
+  }
+
+  .article-body tbody tr:nth-child(odd) {
+    background-color: $c-yellow;
+  }
+  
+  .article-body tbody tr:nth-child(even) {
+    background-color: $c-yellow-light;
+  }
   
   .article-body img {
     width: 100%;
     height: auto;
+    margin: 10px 0 10px 0;
+    border: 3px solid $c-white;
+    box-sizing: border-box;
+    box-shadow: $Shadow-base;
+    border-radius: 7px;
   }
 
   .article-body blockquote {
     border-left: 10px solid $c-purple-dimmed;
     padding: 0 0 0 1rem;
+    font: $f-quote;
     font-style: italic;
+  }
+  .article-body blockquote p {
+    margin: 0 auto;
   }
   
   .article-body pre,
@@ -129,4 +169,5 @@
 
   ol, ul {
     list-style: disc;
+    line-height: 1;
   }

@@ -2,12 +2,10 @@
   <main class="main-wrapper">
     <header-nav>
     </header-nav>
-    <div class="body-wrapper">
-      <pagination>
-      </pagination>
-      <sidebar>
-      </sidebar>
-    </div>
+    <hero>
+    </hero>
+    <pagination>
+    </pagination>
   </main>
 </template>
 
@@ -18,11 +16,13 @@
   import Pagination from '../components/Pagination.vue'
   import HeaderNav from '../components/HeaderNav.vue'
   import Sidebar from '../components/Sidebar.vue'
+  import Hero from '../components/Hero.vue'
   export default {
     components: {
       Pagination,
       HeaderNav,
-      Sidebar
+      Sidebar,
+      Hero
     },
     data () {
       return {
@@ -36,10 +36,4 @@
 </script>
 <style lang="scss">
   @import '../../css/_var.scss';
-
-  .body-wrapper {
-    display: flex;
-    height: 100%;
-    margin: 50px 0 10px 0;
-  }
 </style>
