@@ -64,7 +64,7 @@
           query:
           `query {
             articles (where: {
-            	URL: "${articleUrl}"
+              URL: "${articleUrl}"
              }) {
               URL
               Headline
@@ -102,9 +102,6 @@
       }
     },
     computed: {
-      // shareLink() {
-        // window.location.href
-      // }
     },
     methods: {
       

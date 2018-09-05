@@ -49,7 +49,9 @@
         data: {
           query: 
           `query {
-            articles {
+            articles (where: {
+              Published: true
+            }) {
                 _id
                 Headline
                 Content_brief
@@ -79,10 +81,10 @@
     computed: {
       filteredCategories() {
         return this.cards.filter((el) => {
-          if (this.pickedCategory){
-            return el.categories === this.pickedCategory
+          if (this.pickedCategory) {
+            return el.categories === this.pickedCategory;
           } else {
-            return el.categories
+            return el.categories;
           }
         });
       }

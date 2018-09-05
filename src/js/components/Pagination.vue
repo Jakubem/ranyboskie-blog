@@ -43,7 +43,9 @@
         data: {
           query: 
           `query {
-            articles {
+            articles (where: {
+              Published: true
+            }) {
               _id
               Headline
               Content_brief
