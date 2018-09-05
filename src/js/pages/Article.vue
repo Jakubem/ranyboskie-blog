@@ -65,7 +65,7 @@
           `query {
             articles (where: {
               URL: "${articleUrl}"
-             }) {
+            }) {
               URL
               Headline
               Body
@@ -145,7 +145,6 @@
     margin-top: 20px;
     text-align: center;
     letter-spacing: 1.3px;
-    // padding: 0 50px 0 50px;
     padding: 0;
     color: $c-black;
     line-height: $f-line-h1;
@@ -183,6 +182,26 @@
 
   .twitter-share-button {
     margin-right: 10px;
+  }
+
+  @media screen and (max-width: 500px){
+    .article-brief {
+      padding: 10px;
+      font: $f-p-b-mob;
+      margin-top: 5px; 
+    }
+    .article-body {
+      padding: 10px;
+      margin-top: 5px;
+      font: $f-p-mob;
+    }
+    .headline {
+      font: $f-h1-mob;
+      margin: 5px 0;
+    }
+    .article-social {
+      margin-bottom: 10px;
+    }
   }
 
 </style>

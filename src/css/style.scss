@@ -70,8 +70,9 @@ html, body, #app {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .headline {
-    font: $f-h1-mob;
+@media screen and (max-width: 500px){
+  .svg-icon {
+    width: 16px;
+    height: 16px;
   }
 }

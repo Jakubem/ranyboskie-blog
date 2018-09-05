@@ -26,7 +26,14 @@
     // border-bottom-right-radius: 15%;
   }
   .hero-h2 {
-    font: $f-h1;
+    font: $f-h1;  
     color: $c-black;
   }
+
+  @media screen and (max-width: 500px) {
+    .hero-h2 {
+      font: $f-h1-mob;
+    }
+  }
+
 </style>

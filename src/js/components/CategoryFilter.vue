@@ -65,7 +65,7 @@
 
   .filter-legend {
     font: $f-h2;
-    margin: 0 0 15px 5px;
+    margin: 0 0 0 5px;
     padding: 0;
   }
 
@@ -73,9 +73,8 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    margin: 0;
+    margin: 20px 0;
     padding: 0;
-    // display: none;
   }
   
   .filter-radio-label {
@@ -86,6 +85,7 @@
   .filter-radio-wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .filter-radio-label .filter-radio-content {
@@ -101,4 +101,16 @@
   .filter-radio:checked + .filter-radio-content {
     background-color: $c-green;
   }
+
+  @media screen and (max-width: 500px){
+    .filter-wrapper {
+      margin: 15px 10px;
+    }
+
+    .filter-radio-wrapper {
+      justify-content: center;
+    }
+
+}
+
 </style>

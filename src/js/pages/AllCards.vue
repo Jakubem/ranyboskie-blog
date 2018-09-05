@@ -131,6 +131,8 @@
   }
 
   @media screen and (max-width: 600px) {
-
+    .all-cards-wrapper {
+      margin-top: 10px;
+    }
   }
 </style>

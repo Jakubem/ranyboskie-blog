@@ -7,11 +7,11 @@
     </router-link>
     <nav>
       <ul class="header-ul">
-        <li class="header-li">
-          <a class="header-link" aria-label="zobacz wszystkie kategorie" href="#">
+        <!-- <li class="header-li">
+          <router-link tag="a" to="/fajne-rzeczy" class="header-link" aria-label="zobacz fajne rzeczy">
             fajne rzeczy
-          </a>
-        </li>
+          </router-link>
+        </li> -->
         <li class="header-li">
           <router-link tag="a" to="/wszystko" class="header-link" aria-label="zobacz wszystko">
             wszystko
@@ -109,6 +109,18 @@
     letter-spacing: $f-l-spacing;
     &:hover {
       text-decoration: underline;
+    }
+  }
+  @media screen and (max-width: 500px){
+    .header-logo {
+      font: $f-h2-logo-mob;
+      margin: 0;
+    }
+    .header-link {
+      font: $f-link-mob;
+    }
+    .header-li {
+      padding: 3px;
     }
   }
 </style>

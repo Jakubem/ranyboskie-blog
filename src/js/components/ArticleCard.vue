@@ -107,4 +107,19 @@
     font: $f-h2;
     margin: 0;
   }
+  
+  @media screen and (max-width: 560px){
+    .card-KV {
+      height: 200px;
+      width: 200px;
+    }
+    .card-teaser {
+      width: 200px;
+    }
+    .card-card {
+      width: 200px;
+      flex-direction: column;
+    }
+  }
+
 </style>
