@@ -23,7 +23,7 @@
 
 <script>
   import Strapi from 'strapi-sdk-javascript/build/main';
-  const apiUrl = 'http://localhost:1337';
+  const apiUrl = 'http://rany-admin.ranyboskie.pl:1337';
   const strapi = new Strapi(apiUrl);
   import ArticleCard from '../components/ArticleCard.vue'
   import HeaderNav from '../components/HeaderNav.vue'

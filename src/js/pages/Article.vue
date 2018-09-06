@@ -4,7 +4,7 @@
     </header-nav>
     <div class="article-KV-wrapper">
       <img v-if="KV != ''"
-        :src="`//localhost:1337/${KV}`" 
+        :src="`http://rany-admin.ranyboskie.pl:1337/${KV}`" 
         :alt="KV_alt" 
         class="article-KV">
     </div>
@@ -50,7 +50,7 @@
   md.use(markdownItTable);
   md.disable('code');
   import Strapi from 'strapi-sdk-javascript/build/main';
-  const apiUrl = 'http://localhost:1337';
+  const apiUrl = 'http://rany-admin.ranyboskie.pl:1337';
   const strapi = new Strapi(apiUrl);
   export default {
     components: {
