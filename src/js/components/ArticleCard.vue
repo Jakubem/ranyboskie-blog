@@ -1,7 +1,7 @@
 <template>
   <div class="card-card">
     <img class="card-KV" 
-      :src="`http://localhost:1337/${obj.KV.url}`" 
+      :src="`http://rany-admin.ranyboskie.pl:1337${obj.KV.url}`" 
       :alt="obj.KV_alt">
     <div class="card-teaser">
       <h2 class="card-headline">
@@ -80,7 +80,7 @@
     -moz-box-orient: vertical;
   }
   .card-card {
-    border: $b-hair;
+    // border: $b-hair;
     border-radius: $b-radius;
     box-shadow: $Shadow-card;
     background-color: $c-white;
@@ -110,14 +110,16 @@
   
   @media screen and (max-width: 560px){
     .card-KV {
-      height: 200px;
-      width: 200px;
+      height: 250px;
+      width: 250px;
+      margin: 0 0 10px 0;
     }
     .card-teaser {
-      width: 200px;
+      width: 250px;
+      padding: 0;
     }
     .card-card {
-      width: 200px;
+      width: 250px;
       flex-direction: column;
     }
   }
