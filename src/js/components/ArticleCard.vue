@@ -14,7 +14,7 @@
         <time class="card-created-at">
           {{ date }}
         </time>
-        <a :href="`/#/article?page=${obj.URL}`" class="CTA card-link"> Idź czytaj </a>
+        <a :href="`/#/article?page=${obj.URL}`" :aria-label="`idź czytaj '${obj.Headline}'`" class="CTA card-link"> Idź czytaj </a>
       </div>
     </div>
   </div>
@@ -80,7 +80,6 @@
     -moz-box-orient: vertical;
   }
   .card-card {
-    // border: $b-hair;
     border-radius: $b-radius;
     box-shadow: $Shadow-card;
     background-color: $c-white;
@@ -89,6 +88,7 @@
     padding: 10px;
     display: flex;
     flex-direction: row;
+    // background-image: url('../../assets/gravel-clear.png');
   }
   
   .card-teaser-info {
