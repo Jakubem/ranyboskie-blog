@@ -8,7 +8,7 @@
         <label class="filter-radio-label" 
           v-for="el in categories" 
           :key="el.lenght">
-          <input  tabindex="1" class="filter-radio" 
+          <input tabindex="1" class="filter-radio"
             :ref='el' 
             :class="el" 
             type="radio" 
@@ -70,11 +70,12 @@
   }
 
   .filter-radio {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    // -webkit-appearance: none;
+    // -moz-appearance: none;
+    // appearance: none;
     margin: 20px 0;
     padding: 0;
+    opacity: 0;
   }
   
   .filter-radio-label {
@@ -100,6 +101,9 @@
 
   .filter-radio:checked + .filter-radio-content {
     background-color: $c-green;
+  }
+  .filter-radio:focus + .filter-radio-content {
+    background-color: $c-orange;
   }
 
   @media screen and (max-width: 500px){
