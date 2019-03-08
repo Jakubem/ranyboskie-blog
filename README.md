@@ -1,4 +1,4 @@
-<p style="font-size: 30px; font-weight: bold; background-color: #fcc; padding: 20px;">this is depreciated, as I realized that building a blog as SPA is kinda ridiculous</p>
+>this is depreciated, as I realized that building a blog as SPA is kinda ridiculous
 
 ## Ranyboskie Blog
 
